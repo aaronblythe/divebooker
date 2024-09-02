@@ -1,0 +1,62 @@
+{
+  "name": "5099590a-401d-4eb8-948d-2617dc02a52b",
+  "tags": [ "#inquire" ],
+  "displayName": "What is a liveaboard?",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! What can I do for you today?" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "What is a liveaboard?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "I didn't get that. Can you say it again?" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725315377,
+    "nanos": 390642000
+  },
+  "testConfig": {
+    "flow": "Liveaboards",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}

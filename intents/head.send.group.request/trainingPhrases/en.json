@@ -1,0 +1,133 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "I always wanted to dive in ",
+      "auto": true
+    }, {
+      "text": "Socorro Island",
+      "parameterId": "destination",
+      "auto": true
+    }, {
+      "text": ". Do you offer charters there as well?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any special offers to Thailand ",
+      "auto": true
+    }, {
+      "text": "next month",
+      "parameterId": "departure-month",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to hire a bot in the "
+    }, {
+      "text": "Sea of Cortez",
+      "parameterId": "destination",
+      "auto": true
+    }, {
+      "text": " with other "
+    }, {
+      "text": "16",
+      "parameterId": "number-of-guests"
+    }, {
+      "text": " divers"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Can you also assist with charters in Sudan?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to make a group booking for "
+    }, {
+      "text": "18",
+      "parameterId": "number-of-guests"
+    }, {
+      "text": " divers to "
+    }, {
+      "text": "Guadalupe Island",
+      "parameterId": "destination"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "We are ",
+      "auto": true
+    }, {
+      "text": "eight",
+      "parameterId": "number-of-guests",
+      "auto": true
+    }, {
+      "text": " divers and we would like to rent a boat in the Red Sea.",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Do you have any special offers for groups to ",
+      "auto": true
+    }, {
+      "text": "Costa Rica",
+      "parameterId": "destination",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I am looking for a private boat to ",
+      "auto": true
+    }, {
+      "text": "Galapagos Islands",
+      "parameterId": "destination",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "in two months time",
+      "parameterId": "departure-month",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to make a group booking to ",
+      "auto": true
+    }, {
+      "text": "Mexico",
+      "parameterId": "destination",
+      "auto": true
+    }, {
+      "text": " ",
+      "auto": true
+    }, {
+      "text": "next June",
+      "parameterId": "departure-month",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

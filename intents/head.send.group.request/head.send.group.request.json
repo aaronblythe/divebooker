@@ -1,0 +1,16 @@
+{
+  "name": "e75f3c9a-ee52-43be-8559-cb75f7f96d90",
+  "displayName": "head.send.group.request",
+  "parameters": [ {
+    "id": "destination",
+    "entityType": "@destination"
+  }, {
+    "id": "departure-month",
+    "entityType": "@sys.date-period"
+  }, {
+    "id": "number-of-guests",
+    "entityType": "@number-of-guests"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 9
+}

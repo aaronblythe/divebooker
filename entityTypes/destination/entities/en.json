@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "Galapagos Islands",
+    "synonyms": [ "Galapagos", "Galapagos Islands" ],
+    "languageCode": "en"
+  }, {
+    "value": "Mexico",
+    "synonyms": [ "Guadalupe Islands", "Mexico", "Sea of Cortez", "Socorro Islands" ],
+    "languageCode": "en"
+  }, {
+    "value": "Costa Rica",
+    "synonyms": [ "Cocos Islands", "Costa Rica" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,131 @@
+{
+  "name": "4e95bf54-b903-47a1-a546-2f90546ba605",
+  "displayName": "Collect Further Info",
+  "form": {
+    "parameters": [ {
+      "displayName": "destination",
+      "required": true,
+      "entityType": "@destination",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Where would you like to go? We can organise a charter in Costa Rica, Galapagos Islands and several location around Mexico" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, where would you like to go again? ", "Sorry, I am afraid that's not a valid destination. Can you please pick one of the options above?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "8094dc75-7ddc-4ead-909e-9ff4ba57f595"
+        } ]
+      }
+    }, {
+      "displayName": "departure-month",
+      "required": true,
+      "entityType": "@sys.date-period",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "When would you like to go?" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, can you please provide a departure period/month?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "7115a74f-b910-47cd-9a5b-ed9893784f81"
+        } ]
+      }
+    }, {
+      "displayName": "number-of-guests",
+      "required": true,
+      "entityType": "@number-of-guests",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Now please tell me the number of guests" ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, we can only assist with group reservations of 4 to 15 people." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "4141e013-8a13-4470-9b73-36a7b1dca869"
+        } ]
+      }
+    }, {
+      "displayName": "email-address",
+      "required": true,
+      "entityType": "@sys.email",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Can I please have your email address? " ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-default",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I need a valid email address to send you the offer" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "2e2f984a-707a-47e0-aa3d-2da11acd39df"
+        } ]
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "To assist you with that I need to collect the details of your travel and then we'll get back to you with an offer shortly. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thank you so much for providing the details of your travel. We will look for the best offers that match your needs and we will get back to you shortly! " ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "decc4b46-8091-4d0a-942d-f33a0e955aa2"
+  } ]
+}
