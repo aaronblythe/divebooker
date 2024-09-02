@@ -23,7 +23,11 @@
                 "text": [ "Sorry, where would you like to go again? ", "Sorry, I am afraid that's not a valid destination. Can you please pick one of the options above?" ]
               },
               "languageCode": "en"
-            } ]
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
           },
           "name": "8094dc75-7ddc-4ead-909e-9ff4ba57f595"
         } ]
@@ -49,7 +53,11 @@
                 "text": [ "Sorry, can you please provide a departure period/month?" ]
               },
               "languageCode": "en"
-            } ]
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
           },
           "name": "7115a74f-b910-47cd-9a5b-ed9893784f81"
         } ]
@@ -75,7 +83,11 @@
                 "text": [ "Sorry, we can only assist with group reservations of 4 to 15 people." ]
               },
               "languageCode": "en"
-            } ]
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
           },
           "name": "4141e013-8a13-4470-9b73-36a7b1dca869"
         } ]
@@ -101,7 +113,11 @@
                 "text": [ "I need a valid email address to send you the offer" ]
               },
               "languageCode": "en"
-            } ]
+            } ],
+            "enableGenerativeFallback": true,
+            "nextActionOverride": {
+            
+            }
           },
           "name": "2e2f984a-707a-47e0-aa3d-2da11acd39df"
         } ]

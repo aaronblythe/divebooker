@@ -1,0 +1,99 @@
+{
+  "name": "5bd77935-a170-4321-a6ec-46c48d87e2e2",
+  "tags": [ "#not-option" ],
+  "displayName": "Select Spain",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I would like to make a group booking for next May."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "head.send.group.request"
+      },
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "To assist you with that I need to collect the details of your travel and then we'll get back to you with an offer shortly. " ]
+      }, {
+        "text": [ "Where would you like to go? We can organise a charter in Costa Rica, Galapagos Islands and several location around Mexico" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 31,
+            "month": 5,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 5,
+            "year": 2025
+          }
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Spain."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Sorry, I am afraid that's not a valid destination. Can you please pick one of the options above?" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 31,
+            "month": 5,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 5,
+            "year": 2025
+          }
+        }
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725319489,
+    "nanos": 587958000
+  },
+  "testConfig": {
+    "trackingParameters": [ "destination", "departure-month", "number-of-guests", "email-address" ],
+    "flow": "Liveaboards",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}
