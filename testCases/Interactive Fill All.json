@@ -1,0 +1,181 @@
+{
+  "name": "018c7652-0617-4343-8d3c-55f376862cdb",
+  "tags": [ "#fulfill-all" ],
+  "displayName": "Interactive Fill All",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hello"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! How are you doing?" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I would like to set up a diving session next June in the Galapagos."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "head.send.group.request"
+      },
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "To assist you with that I need to collect the details of your travel and then we'll get back to you with an offer shortly. " ]
+      }, {
+        "text": [ "Now please tell me the number of guests" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "destination",
+        "value": "Galapagos Islands"
+      }, {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 30,
+            "month": 6,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 6,
+            "year": 2025
+          }
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "6"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Can I please have your email address? " ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 30,
+            "month": 6,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 6,
+            "year": 2025
+          }
+        }
+      }, {
+        "key": "destination",
+        "value": "Galapagos Islands"
+      }, {
+        "key": "number-of-guests",
+        "value": "6"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "first.last@example.com"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you so much for providing the details of your travel. We will look for the best offers that match your needs and we will get back to you shortly! " ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "email-address",
+        "value": "first.last@example.com"
+      }, {
+        "key": "number-of-guests",
+        "value": "6"
+      }, {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 30,
+            "month": 6,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 6,
+            "year": 2025
+          }
+        }
+      }, {
+        "key": "destination",
+        "value": "Galapagos Islands"
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725321412,
+    "nanos": 580641000
+  },
+  "testConfig": {
+    "trackingParameters": [ "destination", "departure-month", "number-of-guests", "email-address" ],
+    "flow": "Liveaboards",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}
