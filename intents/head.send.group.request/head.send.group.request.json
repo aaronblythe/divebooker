@@ -12,5 +12,6 @@
     "entityType": "@number-of-guests"
   } ],
   "priority": 500000,
+  "description": "Assist users with group or full charter reservations. Initially collect travel details including departure period, destination, number of guests (min 4 max 15 people), contact details. The destination must be one of the following in the Pacific: Costa Rica, Mexico, Galapagos Islands",
   "numTrainingPhrases": 9
 }

@@ -1,0 +1,280 @@
+{
+  "name": "77604eae-c93b-4a91-a518-faec0c2fc61d",
+  "tags": [ "#fulfill" ],
+  "displayName": "Ask about liveaboard, first",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Hello my name is Aaron!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Hello Aaron! I am happy to help you find the perfect liveaboard trip for your group. Where would you like to go? We have trips to Costa Rica, Mexico, and the Galapagos Islands. When are you looking to travel? How many people will be in your group?" ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Can you tell me more about liveaboard diving? What is a liveaboard?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "A liveaboard is a boat that serves as both your accommodation and your dive platform. This means that you can spend multiple days and nights on the boat, diving at different sites each day. Liveaboards are a great way to experience diving in remote areas that are not accessible from shore. They also offer a unique opportunity to socialize with other divers and make new friends." ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Oh wow! Tell me more."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Liveaboards typically have a variety of amenities, such as comfortable cabins, a dining area, a lounge, and a dive deck. Some liveaboards even have a swimming pool or a hot tub. The crew on a liveaboard is responsible for everything from cooking and cleaning to driving the boat and leading the dives. This allows you to relax and focus on enjoying your diving vacation." ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Is it? I am not a diver yet. Can you also help me with courses?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "I am sorry, but I can only help with liveaboard diving trips. I cannot recommend local dive shops or diving resorts." ],
+        "containAiGeneratedContent": true,
+        "containGenerativeFallback": true
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I would like to book a charter to Mexico for a group of 13 people."
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "head.send.group.request"
+      },
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "To assist you with that I need to collect the details of your travel and then we'll get back to you with an offer shortly. " ]
+      }, {
+        "text": [ "When would you like to go?" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "destination",
+        "value": "Mexico"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "We are looking at May 2025"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Now please tell me the number of guests" ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "destination",
+        "value": "Mexico"
+      }, {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 31,
+            "month": 5,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 5,
+            "year": 2025
+          }
+        }
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "13"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Can I please have your email address? " ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "number-of-guests",
+        "value": "13"
+      }, {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 31,
+            "month": 5,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 5,
+            "year": 2025
+          }
+        }
+      }, {
+        "key": "destination",
+        "value": "Mexico"
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "first.last@example.com"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Collect Further Info",
+        "flow": "Liveaboards"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you so much for providing the details of your travel. We will look for the best offers that match your needs and we will get back to you shortly! " ]
+      } ],
+      "currentFlow": {
+        "name": "Liveaboards"
+      }
+    },
+    "expectations": {
+      "expectedSessionParameters": [ {
+        "key": "email-address",
+        "value": "first.last@example.com"
+      }, {
+        "key": "departure-month",
+        "value": {
+          "endDate": {
+            "day": 31,
+            "month": 5,
+            "year": 2025
+          },
+          "startDate": {
+            "day": 1,
+            "month": 5,
+            "year": 2025
+          }
+        }
+      }, {
+        "key": "destination",
+        "value": "Mexico"
+      }, {
+        "key": "number-of-guests",
+        "value": "13"
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1725324567,
+    "nanos": 271161000
+  },
+  "testConfig": {
+    "trackingParameters": [ "destination", "departure-month", "number-of-guests", "email-address" ],
+    "flow": "Liveaboards",
+    "page": "Start Page"
+  },
+  "languageCode": "en"
+}
